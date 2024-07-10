@@ -15,6 +15,7 @@ prince = "*"
 ipykernel = "*"
 openpyxl = "*"
 nbformat = "*"
+jupyterlab = "*"
 
 [dev-packages]
 

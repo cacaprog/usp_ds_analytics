@@ -16,6 +16,8 @@ ipykernel = "*"
 openpyxl = "*"
 nbformat = "*"
 jupyterlab = "*"
+pingouin = "*"
+factor-analyzer = "*"
 
 [dev-packages]
 

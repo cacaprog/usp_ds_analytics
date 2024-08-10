@@ -4,6 +4,21 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pandas = "*"
+numpy = "*"
+seaborn = "*"
+matplotlib = "*"
+plotly = "*"
+scipy = "*"
+statsmodels = "*"
+scikit-learn = "*"
+playsound = "*"
+pingouin = "*"
+emojis = "*"
+statstests = "*"
+ipykernel = "*"
+nbformat = "*"
+networkx = "*"
 
 [dev-packages]
 

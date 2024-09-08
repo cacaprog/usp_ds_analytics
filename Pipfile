@@ -19,6 +19,7 @@ statstests = "*"
 ipykernel = "*"
 nbformat = "*"
 networkx = "*"
+requests = "*"
 
 [dev-packages]
 

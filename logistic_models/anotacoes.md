@@ -233,3 +233,44 @@ Não necessariamente você escolhe o cutoff com base no gráfico, mas ele é o i
 Livro: Robert Clemen - making hard decisions
 
 ## Exemplo 3 - Dados Fidelidade
+
+3.000 cliente, varejista bens não duráveis.
+
+Fidelidade é considerado se a pessoa retornou em 1 mês para nova aquisição.
+
+Dataset
+- 1 variável y dicotômica (fidelidade)
+- 1 variável x (quali)
+- 1 variável x quanti (idade)
+- 4 variáveis x quanti (multi)
+
+O que vamos fazer:
+- dummizar as variáveis quali preditoras
+- aplicar o modelo correto para a variável y que é apresentada como quali dicotômica binária
+
+Na estimação do modelo logístico
+- criar uma lista com todas as preditoras é ideal, já que são muitas dummies
+
+Na matriz de confusão
+- interessante colocar o cuttoff para análise
+
+Busca de novas variáveis preditoras
+- as empresas estão investindo milhões na busca de informação para incluir na base para incluir 1% na ROC. Isso as vezes tem payback, gera milhões em avaliações preditivas
+
+# Exemplo 4 - Regressão logística multinomial
+![alt text](images/image_.png)
+
+- na logística multinomial. para 3 categorias, eu preciso ter logito 2 logitos: P0 referência, P1 logito 1 (Z1), e P2 logito 2 (Z2)
+
+![alt text](images/image-11.png)
+
+- a escolha não é feita pelo cutoff (extratificação dicotômica) (evento ou não evento), ela é feita com base na probabilidade de ocorrência
+
+> [!Warning] tem artigos que rodam OLS quando a variável y é likert, ou seja, um erroooooooooooo. Cuidado com esse tipo de prática.
+
+Depois da estimação do modelo com função 'MNLogit' (`statsmodels.discrete.discrete_model`)
+
+`modelo_atrasado = MNLogit(endog=y, exog=X).fit()`
+
+![alt text](images/image-12.png)
+

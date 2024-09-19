@@ -20,6 +20,7 @@ ipykernel = "*"
 nbformat = "*"
 networkx = "*"
 requests = "*"
+tqdm = "*"
 
 [dev-packages]
 

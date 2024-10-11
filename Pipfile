@@ -21,6 +21,10 @@ nbformat = "*"
 networkx = "*"
 requests = "*"
 tqdm = "*"
+openpyxl = "*"
+imageio = "*"
+pymer4 = "*"
+rpy2 = "*"
 
 [dev-packages]
 
